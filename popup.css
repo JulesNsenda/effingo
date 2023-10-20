@@ -1,0 +1,9 @@
+body {
+    width: 150px;
+}
+
+.copy-count {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
