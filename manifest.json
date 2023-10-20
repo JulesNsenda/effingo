@@ -5,7 +5,8 @@
   "description": "Counts the number of text copies.",
   "permissions": [
     "clipboardRead",
-    "activeTab"
+    "activeTab", 
+    "storage"
   ],
   "background": {
     "scripts": [

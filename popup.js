@@ -1,4 +1,4 @@
-chrome.runtime.getBackgroundPage((backgroundPage) => {
-    const copyCount = backgroundPage.copyCount || 0;
+chrome.storage.local.get({ copyCount: 0 }, (data) => {
+    const copyCount = data.copyCount;
     document.getElementById('copyCount').textContent = copyCount;
-});
+});  
