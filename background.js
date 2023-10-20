@@ -12,7 +12,7 @@ chrome.storage.local.get({ copyCount: 0 }, (data) => {
     chrome.browserAction.setBadgeText({ text: copyCount.toString() });
 });
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((message, _sender, _sendResponse) => {
     if (message.type === 'copy') {
         copyCount++;
         chrome.storage.local.set({ copyCount });
